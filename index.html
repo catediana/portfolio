@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catherine Nanyala - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Catherine Nanyala</a>
+      <nav id="nav" class="nav" role="navigation" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Homepage Section -->
+    <section id="home" class="section hero" tabindex="-1" aria-label="Introduction">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Hi, I’m Catherine Nanyala</h1>
+          <p class="lede">
+             Backend Software Engineer | AI,Machine learning & Data Science Enthusiast
+          </p>
+          <p class="lede">
+             Secialized in building secure, scalable backend systems using Python and Django, and I’m currently expanding my expertise in AI, Machine learning and Data Science to create intelligent, data-driven applications.
+          </p>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-avatar-wrap" role="img" aria-label="Catherine Nanyala's avatar">
+            <img id="hero-avatar" class="hero-avatar" src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Avatar" />
+            <input type="file" id="hero-avatar-input" accept="image/*" style="display:none" aria-label="Upload avatar" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" tabindex="-1" aria-label="Projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+
+          <!-- Task Manager Project Card -->
+          <article class="project-card" tabindex="0" aria-labelledby="task-manager-title">
+            <div class="project-content">
+              <h3 id="task-manager-title"> Task Manager</h3>
+              <ul class="tags">
+                <li>Django</li><li>JavaScript</li><li>MySQL</li><li>jQuery</li><li>Python</li><li>Django templates</li>
+              </ul>
+              <p>A comprehensive productivity app that helps users efficiently manage tasks with a clean interface and powerful features.</p>
+              <ul class="feature-list">
+                <li>Secure user authentication & personalized task lists.</li>
+                <li>Dashboard with task summaries & reminders (overdue, today, upcoming).</li>
+                <li>CRUD with priorities, categories, attachments, subtasks.</li>
+                <li>Advanced search, filtering, and drag-and-drop reordering.</li>
+                <li>User avatars & profile pictures.</li>
+                <li>Task commenting system and archiving.</li>
+              </ul>
+              <p class="learned"><strong>Key Learning:</strong> Strengthened skills in Django, relational databases, AJAX, integration of advanced features like drag-and-drop and file uploads.</p>
+              <div class="project-links">
+                <a href="https://task-manager-ngk9.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-small">live demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fitness Tracker Project Card -->
+          <article class="project-card" tabindex="0" aria-labelledby="fitness-tracker-title">
+            <div class="project-content">
+              <h3 id="fitness-tracker-title">Fitness Tracker</h3>
+              <ul class="tags">
+                <li>Python</li><li>Django</li><li>RESTful API</li><li>PostgreSQL</li><li>Django templates</li>
+              </ul>
+              <p>A web application to log workouts, set fitness goals, and track progress over time, helping users monitor their health habits with clear insights.</p>
+              <ul class="feature-list">
+                <li>User authentication (login/signup).</li>
+                <li>Add, edit, and delete workout activities.</li>
+                <li>Dashboard with workout summaries and progress charts using Chart.js.</li>
+                <li>Goal setting and progress tracking functionality.</li>
+              </ul>
+              <p class="learned"><strong>Key Learning:</strong> Gained expertise in API development, JWT authentication, and integrating data visualization tools with backend systems.</p>
+              <div class="project-links">
+                <a href="https://goalflex-ecru.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-small">live demo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section alt" tabindex="-1" aria-label="About Me">
+      <div class="container grid-2">
+        <div>
+          <h2>About Me</h2>
+          <p>I am a Backend Software Engineer with a background in Computer Science and a strong foundation in Python, Django, RESTful APIs, and MySQL.</p>
+          <p>Currently, I am expanding my expertise into AI, Machine Learning, and Data Science to bridge backend systems with intelligent solutions.</p>
+          <h3>Skills</h3>
+          <ul class="skills">
+            <li>Python</li>
+            <li>Django</li>
+            <li>MySQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>REST APIs</li>
+            <li>Laravel</li>
+            <li>PHP</li>
+            <li>Postman</li>
+            <li>JWT Authentication</li>
+            <li>Git & GitHub</li>
+            <li>Problem-solving</li>
+            <li>Collaboration</li>
+            <li>Critical thinking</li>
+          </ul>
+        </div>
+        <aside class="about-aside" aria-label="Professional stats">
+          <div class="stat">
+            <div class="stat-number">1</div>
+            <div class="stat-label">Year of Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Dedicated to Learning</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" tabindex="-1" aria-label="Contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>You can reach me via the following:</p>
+        <div class="contact-links">
+          <a href="mailto:catherinenanyala270@gmail.com" class="btn btn-small" aria-label="Email Catherine">Email</a>
+          <a href="https://www.linkedin.com/in/catherine-nanyala-55676b311/" target="_blank" rel="noopener noreferrer" class="btn btn-small" aria-label="LinkedIn Profile">LinkedIn</a>
+          <a href="https://github.com/catediana" target="_blank" rel="noopener noreferrer" class="btn btn-small" aria-label="GitHub Profile">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Catherine Nanyala. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
